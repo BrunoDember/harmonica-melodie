@@ -3,99 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Harmonica Mélodie - Découvrez l'art de l'harmonica à travers des mélodies intemporelles, de la chanson française au jazz, en passant par la bossa nova et l'opéra. Par Bruno Dember.">
-    <title>Harmonica Mélodie | Accueil</title>
+    <title>Harmonica Mélodie | Bruno Dember</title>
+    <meta name="description" content="Découvrez l'harmonica à travers tous les styles musicaux : chanson française, jazz, bossa nova, opéra et plus encore. Bruno Dember - Harmonica Mélodie.">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎶</text></svg>">
 </head>
 <body>
     <header>
         <div class="header-banner">
+            <!-- Bannière SVG avec harmonica, pupitre et Paris -->
             <div class="banner-svg">
                 <svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <!-- Fond dégradé nuit parisienne -->
+                    <!-- Ciel nocturne Paris -->
+                    <rect width="1200" height="300" fill="url(#skyGradient)" />
+
+                    <!-- Silhouette de Paris (Tour Eiffel, Montmartre) -->
+                    <g fill="#1A1A1A" opacity="0.8">
+                        <!-- Tour Eiffel -->
+                        <path d="M100 300 L100 150 L110 150 L110 120 L120 120 L120 100 L130 100 L130 80 L140 80 L140 60 L150 60 L150 40 L160 40 L160 20 L170 20 L170 10 L180 10 L180 300 Z" />
+                        <path d="M180 10 L200 30 L200 50 L210 50 L210 70 L220 70 L220 90 L230 90 L230 110 L240 110 L240 130 L250 130 L250 150 L260 150 L260 300 Z" />
+
+                        <!-- Montmartre (Sacré-Cœur) -->
+                        <ellipse cx="350" cy="180" rx="60" ry="40" />
+                        <rect x="320" y="180" width="60" height="80" />
+                        <polygon points="320,180 350,140 380,180" />
+
+                        <!-- Autres bâtiments -->
+                        <rect x="450" y="200" width="40" height="100" />
+                        <rect x="500" y="180" width="30" height="120" />
+                        <rect x="540" y="190" width="35" height="110" />
+                        <rect x="580" y="170" width="45" height="130" />
+                    </g>
+
+                    <!-- Bureau et pupitre -->
+                    <g fill="#5C4033" stroke="#3A2E28" stroke-width="2">
+                        <!-- Pupitre -->
+                        <path d="M600 250 L600 180 L750 180 L800 220 L800 250 L600 250 Z" />
+                        <rect x="620" y="170" width="130" height="10" rx="5" />
+
+                        <!-- Harmonica sur le pupitre -->
+                        <rect x="650" y="160" width="60" height="20" rx="10" fill="#D4AF37" />
+                        <rect x="655" y="155" width="50" height="5" rx="2" fill="#1A1A1A" />
+                        <rect x="660" y="150" width="40" height="5" rx="2" fill="#1A1A1A" />
+                        <rect x="665" y="145" width="30" height="5" rx="2" fill="#1A1A1A" />
+
+                        <!-- Partitions -->
+                        <rect x="720" y="165" width="40" height="30" rx="2" fill="#F5F5DC" stroke="#5C4033" stroke-width="1" />
+                        <line x1="725" y1="170" x2="755" y2="170" stroke="#5C4033" stroke-width="0.5" />
+                        <line x1="725" y1="175" x2="755" y2="175" stroke="#5C4033" stroke-width="0.5" />
+                        <line x1="725" y1="180" x2="755" y2="180" stroke="#5C4033" stroke-width="0.5" />
+                        <line x1="725" y1="185" x2="755" y2="185" stroke="#5C4033" stroke-width="0.5" />
+                        <line x1="725" y1="190" x2="755" y2="190" stroke="#5C4033" stroke-width="0.5" />
+                    </g>
+
+                    <!-- Étoiles et lumières -->
+                    <g fill="#D4AF37" opacity="0.8">
+                        <circle cx="50" cy="50" r="2" />
+                        <circle cx="100" cy="80" r="1.5" />
+                        <circle cx="150" cy="40" r="1" />
+                        <circle cx="200" cy="90" r="1.5" />
+                        <circle cx="250" cy="60" r="2" />
+                        <circle cx="300" cy="100" r="1" />
+                        <circle cx="400" cy="50" r="1.5" />
+                        <circle cx="450" cy="80" r="2" />
+                        <circle cx="500" cy="40" r="1" />
+                        <circle cx="550" cy="90" r="1.5" />
+                    </g>
+
+                    <!-- Dégradés -->
                     <defs>
-                        <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stop-color="#0a1a2a" />
-                            <stop offset="100%" stop-color="#1a3a5a" />
+                        <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0A1A2A;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#1A2A3A;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#2C3E50;stop-opacity:1" />
                         </linearGradient>
-                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#D4AF37" />
-                            <stop offset="100%" stop-color="#F4D03F" />
-                        </linearGradient>
-                        <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-                            <feGaussianBlur stdDeviation="4" result="blur" />
-                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                        </filter>
                     </defs>
-
-                    <!-- Fond -->
-                    <rect width="1200" height="300" fill="url(#nightSky)" />
-
-                    <!-- Étoiles -->
-                    <g fill="#F5F5DC" opacity="0.8">
-                        <circle cx="50" cy="40" r="1.5" />
-                        <circle cx="120" cy="80" r="1" />
-                        <circle cx="200" cy="30" r="1.2" />
-                        <circle cx="250" cy="100" r="1" />
-                        <circle cx="300" cy="50" r="1.5" />
-                        <circle cx="400" cy="20" r="1" />
-                        <circle cx="500" cy="90" r="1.2" />
-                        <circle cx="600" cy="40" r="1" />
-                        <circle cx="700" cy="110" r="1.5" />
-                        <circle cx="800" cy="60" r="1" />
-                        <circle cx="900" cy="30" r="1.2" />
-                        <circle cx="1000" cy="80" r="1" />
-                        <circle cx="1100" cy="50" r="1.5" />
-                    </g>
-
-                    <!-- Tour Eiffel (silhouette) -->
-                    <g fill="#2C3E50" opacity="0.9">
-                        <polygon points="150,300 170,200 200,250 230,150 250,200 270,100 290,150 310,200 330,150 350,250 370,200 390,300" />
-                        <rect x="180" y="250" width="40" height="50" fill="#3C4E60" />
-                        <rect x="280" y="250" width="40" height="50" fill="#3C4E60" />
-                    </g>
-
-                    <!-- Montmartre (silhouette) -->
-                    <g fill="#2C3E50" opacity="0.9">
-                        <ellipse cx="900" cy="250" rx="80" ry="50" />
-                        <rect x="850" y="230" width="100" height="40" fill="#3C4E60" />
-                        <polygon points="880,200 900,180 920,200" fill="#3C4E60" />
-                    </g>
-
-                    <!-- Pupitre de musique -->
-                    <g transform="translate(550, 200)">
-                        <rect x="0" y="50" width="120" height="20" fill="#5C4033" rx="2" />
-                        <rect x="10" y="70" width="10" height="80" fill="#5C4033" />
-                        <rect x="100" y="70" width="10" height="80" fill="#5C4033" />
-                        <rect x="0" y="150" width="120" height="5" fill="#5C4033" rx="2" />
-
-                        <!-- Partition musicale -->
-                        <rect x="20" y="80" width="80" height="60" fill="#F5F5DC" rx="2" filter="url(#glow)" />
-                        <g fill="#2C3E50" font-size="8" font-family="serif">
-                            <text x="30" y="100">♫</text>
-                            <text x="40" y="100">♫</text>
-                            <text x="50" y="100">♫</text>
-                            <text x="60" y="100">♩</text>
-                            <text x="70" y="100">♫</text>
-                            <text x="80" y="100">♫</text>
-                        </g>
-                    </g>
-
-                    <!-- Harmonica -->
-                    <g transform="translate(600, 120)">
-                        <rect x="0" y="0" width="40" height="12" fill="#D4AF37" rx="2" />
-                        <rect x="5" y="2" width="30" height="2" fill="#2C3E50" />
-                        <rect x="5" y="5" width="30" height="2" fill="#2C3E50" />
-                        <rect x="5" y="8" width="30" height="2" fill="#2C3E50" />
-                        <rect x="45" y="3" width="10" height="6" fill="#5C4033" />
-                    </g>
-
-                    <!-- Lueurs dorées (effet de lumière) -->
-                    <circle cx="620" cy="130" r="8" fill="url(#goldGradient)" opacity="0.7" filter="url(#glow)" />
-                    <circle cx="650" cy="140" r="5" fill="url(#goldGradient)" opacity="0.7" filter="url(#glow)" />
                 </svg>
             </div>
             <div class="header-content">
@@ -115,53 +97,22 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <section class="hero">
-            <h2>Bienvenue sur Harmonica Mélodie</h2>
-            <p>
-                Plongez dans l'univers envoûtant de l'harmonica à travers des interprétations uniques.
-                De la <strong>chanson française</strong> au <strong>jazz</strong>, en passant par la <strong>bossa nova</strong> et l'<strong>opéra</strong>,
-                chaque note raconte une histoire.
-            </p>
-            <p>
-                Découvrez mon répertoire, mes vidéos, et les anecdotes derrière chaque mélodie.
-            </p>
-            <a href="repertoire.html" class="btn-primary">Explorer le répertoire</a>
-        </section>
-
-        <section class="styles-showcase">
-            <h2>Un voyage à travers les styles</h2>
-            <div class="styles-grid">
-                <article class="style-card">
-                    <div class="style-icon">🎶</div>
-                    <h3>Chanson Française</h3>
-                    <p>Les grands classiques de Piaf, Aznavour, Ferré, et bien d'autres, revisités à l'harmonica.</p>
-                    <a href="repertoire.html#french" class="btn-secondary">Découvrir</a>
-                </article>
-                <article class="style-card">
-                    <div class="style-icon">🎷</div>
-                    <h3>Jazz</h3>
-                    <p>Des standards de jazz et des improvisations qui mettent en valeur la polyphonie de l'harmonica.</p>
-                    <a href="repertoire.html#jazz" class="btn-secondary">Découvrir</a>
-                </article>
-                <article class="style-card">
-                    <div class="style-icon">🌴</div>
-                    <h3>Bossa Nova</h3>
-                    <p>Les rythmes envoûtants du Brésil, adaptés pour l'harmonica.</p>
-                    <a href="repertoire.html#bossa" class="btn-secondary">Découvrir</a>
-                </article>
-                <article class="style-card">
-                    <div class="style-icon">🎭</div>
-                    <h3>Opéra</h3>
-                    <p>Des airs d'opéra revisités avec la sensibilité unique de l'harmonica.</p>
-                    <a href="repertoire.html#opera" class="btn-secondary">Découvrir</a>
-                </article>
+            <div class="hero-content">
+                <h2>L'harmonica sans frontières</h2>
+                <p>De la chanson française au jazz, en passant par la bossa nova et l'opéra, découvrez l'harmonica sous toutes ses formes. Interprétations, tutoriels et passion musicale.</p>
+                <div class="hero-buttons">
+                    <a href="videos.html" class="btn">Voir mes vidéos</a>
+                    <a href="#styles" class="btn btn-outline">Explorer les styles</a>
+                </div>
             </div>
         </section>
 
-        <section class="featured-videos">
-            <h2>Vidéos en avant</h2>
-            <div class="video-grid">
+        <section class="featured">
+            <h2>Dernières vidéos</h2>
+            <div class="video-grid" id="featured-videos">
+                <!-- Première vidéo -->
                 <article class="video-card">
                     <div class="video-embed">
                         <iframe src="https://www.youtube.com/embed/9Lbs3R3pahw"
@@ -175,92 +126,85 @@
                         <p>Ma première vidéo sur ma chaîne Harmonica Mélodie.</p>
                     </div>
                 </article>
+
+                <!-- Deuxième vidéo -->
                 <article class="video-card">
                     <div class="video-embed">
                         <iframe src="https://www.youtube.com/embed/R0z_JLqBijk"
-                                title="Harmonica Mélodie - Deuxième vidéo"
+                                title="Harmonica Mélodie - Deuxième interprétation"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
                         </iframe>
                     </div>
                     <div class="video-info">
-                        <h3>Deuxième vidéo</h3>
-                        <p>Une interprétation unique d'un classique français.</p>
+                        <h3>Deuxième interprétation</h3>
+                        <p>Une nouvelle performance à l'harmonica.</p>
                     </div>
                 </article>
+
+                <!-- Troisième vidéo -->
                 <article class="video-card">
                     <div class="video-embed">
                         <iframe src="https://www.youtube.com/embed/bm5PrwpDp4g"
-                                title="Harmonica Mélodie - Troisième vidéo"
+                                title="Harmonica Mélodie - Troisième performance"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
                         </iframe>
                     </div>
                     <div class="video-info">
-                        <h3>Troisième vidéo</h3>
-                        <p>Une plongée dans l'univers du jazz à l'harmonica.</p>
+                        <h3>Troisième performance</h3>
+                        <p>Encore une belle interprétation à découvrir.</p>
                     </div>
                 </article>
             </div>
-            <div class="see-more">
-                <a href="videos.html" class="btn-primary">Toutes les vidéos</a>
+            <div class="text-center mt-3">
+                <a href="videos.html" class="btn">Voir toutes les vidéos</a>
+            </div>
+        </section>
+
+        <section class="styles-section" id="styles">
+            <h2>Les styles musicaux</h2>
+            <div class="styles-grid">
+                <div class="style-card">
+                    <div class="style-icon">🎶</div>
+                    <h3>Chanson Française</h3>
+                    <p>Piaf, Brel, Ferré, Brassens... Les grands classiques revisités à l'harmonica.</p>
+                </div>
+                <div class="style-card">
+                    <div class="style-icon">🎷</div>
+                    <h3>Jazz & Blues</h3>
+                    <p>Standards de jazz, blues et improvisations pour harmonica.</p>
+                </div>
+                <div class="style-card">
+                    <div class="style-icon">🌴</div>
+                    <h3>Bossa Nova</h3>
+                    <p>Les rythmes brésiliens et les mélodies douces adaptées à l'harmonica.</p>
+                </div>
+                <div class="style-card">
+                    <div class="style-icon">🎭</div>
+                    <h3>Opéra & Classique</h3>
+                    <p>Les plus beaux airs d'opéra et pièces classiques pour harmonica.</p>
+                </div>
             </div>
         </section>
 
         <section class="about-teaser">
-            <h2>À propos de moi</h2>
-            <div class="teaser-content">
-                <div class="teaser-text">
-                    <p>
-                        Je m'appelle <strong>Bruno Dember</strong>, et l'harmonica est bien plus qu'un instrument pour moi :
-                        c'est une passion, un moyen d'exprimer des émotions et de partager des moments uniques avec le public.
-                    </p>
-                    <p>
-                        Mon parcours musical m'a conduit à explorer des styles variés, toujours avec le désir de transmettre
-                        la beauté de la musique à travers cet instrument polyvalent.
-                    </p>
-                </div>
-                <div class="teaser-image">
-                    <!-- Placeholder pour une image future -->
-                    <div class="image-placeholder">📷</div>
-                </div>
-            </div>
-            <div class="see-more">
-                <a href="apropos.html" class="btn-secondary">En savoir plus</a>
-            </div>
+            <h2>Pourquoi l'harmonica ?</h2>
+            <p>L'harmonica est un instrument magique qui tient dans la poche mais qui peut remplir une salle de concert. Polyvalent, il s'adapte à tous les styles musicaux. Je joue depuis de nombreuses années et j'aime partager cette passion à travers des reprises et des créations originales.</p>
+            <a href="apropos.html" class="btn">En savoir plus sur moi</a>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Harmonica Mélodie</h3>
-                <p>L'art de l'harmonica, de la chanson française au jazz.</p>
-                <p class="artist-name">par Bruno Dember</p>
+        <div class="container">
+            <p>&copy; 2024 Harmonica Mélodie | Bruno Dember. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="https://youtube.com/@harmonicavibes" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
             </div>
-            <div class="footer-section">
-                <h4>Liens utiles</h4>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="repertoire.html">Répertoire</a></li>
-                    <li><a href="videos.html">Vidéos</a></li>
-                    <li><a href="histoires.html">Histoires</a></li>
-                    <li><a href="apropos.html">À propos</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Me suivre</h4>
-                <ul>
-                    <li>
-                        <a href="https://www.youtube.com/@harmonicavibes" target="_blank" rel="noopener noreferrer">
-                            Chaîne YouTube @harmonicavibes
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Harmonica Mélodie. Tous droits réservés.</p>
         </div>
     </footer>
 
