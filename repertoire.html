@@ -2,9 +2,10 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <base href="/harmonica-melodie/"> <!-- ✅ Base URL -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Répertoire - Harmonica Mélodie | Bruno Dember</title>
-    <meta name="description" content="Découvrez le répertoire complet des chansons à jouer à l'harmonica avec Bruno Dember, classées par style : chanson française, jazz, bossa nova, opéra et plus encore.">
+    <title>Répertoire | Harmonica Mélodie | Bruno Dember</title>
+    <meta name="description" content="Découvrez mon répertoire de chansons à l'harmonica, classées par style : chanson française, jazz, bossa nova, opéra.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎶</text></svg>">
 </head>
@@ -13,26 +14,112 @@
         <div class="header-banner">
             <div class="banner-svg">
                 <svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <rect width="1200" height="300" fill="url(#skyGradient)"/>
+                    <rect width="1200" height="300" fill="url(#skyGradient)" />
                     <g fill="#1A1A1A" opacity="0.8">
-                        <path d="M100 300 L100 150 L110 150 L110 120 L120 120 L120 100 L130 100 L130 80 L140 80 L140 60 L150 60 L150 40 L160 40 L160 20 L170 20 L170 10 L180 10 L180 300 Z"/>
-                        <path d="M180 10 L200 30 L200 50 L210 50 L210 70 L220 70 L220 90 L230 90 L230 110 L240 110 L240 130 L250 130 L250 150 L260 150 L260 300 Z"/>
-                        <ellipse cx="350" cy="180" rx="60" ry="40"/>
-                        <rect x="320" y="180" width="60" height="80"/>
-                        <polygon points="320,180 350,140 380,180"/>
-                        <rect x="450" y="200" width="40" height="100"/>
-                        <rect x="500" y="180" width="30" height="120"/>
-                        <rect x="540" y="190" width="35" height="110"/>
-                        <rect x="580" y="170" width="45" height="130"/>
+                        <path d="M100 300 L100 150 L110 150 L110 120 L120 120 L120 100 L130 100 L130 80 L140 80 L140 60 L150 60 L150 40 L160 40 L160 20 L170 20 L170 10 L180 10 L180 300 Z" />
+                        <path d="M180 10 L200 30 L200 50 L210 50 L210 70 L220 70 L220 90 L230 90 L230 110 L240 110 L240 130 L250 130 L250 150 L260 150 L260 300 Z" />
+                        <ellipse cx="350" cy="180" rx="60" ry="40" />
+                        <rect x="320" y="180" width="60" height="80" />
+                        <polygon points="320,180 350,140 380,180" />
                     </g>
                     <g fill="#5C4033" stroke="#3A2E28" stroke-width="2">
-                        <path d="M600 250 L600 180 L750 180 L800 220 L800 250 L600 250 Z"/>
-                        <rect x="620" y="170" width="130" height="10" rx="5"/>
-                        <rect x="650" y="160" width="60" height="20" rx="10" fill="#D4AF37"/>
-                        <rect x="655" y="155" width="50" height="5" rx="2" fill="#1A1A1A"/>
-                        <rect x="660" y="150" width="40" height="5" rx="2" fill="#1A1A1A"/>
-                        <rect x="665" y="145" width="30" height="5" rx="2" fill="#1A1A1A"/>
-                        <rect x="720" y="165" width="40" height="30" rx="2" fill="#F5F5DC" stroke="#5C4033" stroke-width="1"/>
-                        <line x1="725" y1="170" x2="755" y2="170" stroke="#5C4033" stroke-width="0.5"/>
-                        <line x1="725" y1="175" x2="755" y2="175" stroke="#5C4033" stroke-width="0.5"/>
-                        <line x1="725" y1="180" x2="755" y2="180" stroke="#5C4033" stroke-width="0.5"/>
+                        <path d="M600 250 L600 180 L750 180 L800 220 L800 250 L600 250 Z" />
+                        <rect x="620" y="170" width="130" height="10" rx="5" />
+                        <rect x="650" y="160" width="60" height="20" rx="10" fill="#D4AF37" />
+                    </g>
+                    <defs>
+                        <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0A1A2A;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#1A2A3A;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#2C3E50;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="header-content">
+                <h1>Harmonica Mélodie</h1>
+                <p class="subtitle">Mon répertoire</p>
+                <p class="artist-name">par Bruno Dember</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="repertoire.html" class="active">Répertoire</a></li>
+                <li><a href="videos.html">Vidéos</a></li>
+                <li><a href="histoires.html">Histoires</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Répertoire musical</h1>
+            <p>Découvrez les morceaux que j'interprète à l'harmonica, classés par style.</p>
+        </section>
+
+        <div class="repertoire-section">
+            <h2>🎶 Chanson Française</h2>
+            <ul class="song-list">
+                <li><strong>La Vie en Rose</strong> - Édith Piaf</li>
+                <li><strong>Ne me quitte pas</strong> - Jacques Brel</li>
+                <li><strong>Les Copains d'abord</strong> - Georges Brassens</li>
+                <li><strong>Avec le temps</strong> - Léo Ferré</li>
+                <li><strong>Sous le ciel de Paris</strong> - Yves Montand</li>
+                <li><strong>La Bohème</strong> - Charles Aznavour</li>
+            </ul>
+        </div>
+
+        <div class="repertoire-section">
+            <h2>🎷 Jazz & Blues</h2>
+            <ul class="song-list">
+                <li><strong>Summertime</strong> - George Gershwin</li>
+                <li><strong>The Girl from Ipanema</strong> - Antonio Carlos Jobim</li>
+                <li><strong>Autumn Leaves</strong> - Joseph Kosma</li>
+                <li><strong>Blue Bossa</strong> - Kenny Dorham</li>
+                <li><strong>Take the A Train</strong> - Duke Ellington</li>
+                <li><strong>Sweet Georgia Brown</strong> - Ben Bernie</li>
+            </ul>
+        </div>
+
+        <div class="repertoire-section">
+            <h2>🌴 Bossa Nova</h2>
+            <ul class="song-list">
+                <li><strong>Garota de Ipanema</strong> - Antonio Carlos Jobim</li>
+                <li><strong>Desafinado</strong> - Antonio Carlos Jobim</li>
+                <li><strong>Corcovado</strong> - Antonio Carlos Jobim</li>
+                <li><strong>Wave</strong> - Antonio Carlos Jobim</li>
+                <li><strong>Mas que Nada</strong> - Jorge Ben</li>
+            </ul>
+        </div>
+
+        <div class="repertoire-section">
+            <h2>🎭 Opéra & Classique</h2>
+            <ul class="song-list">
+                <li><strong>Nessun Dorma</strong> - Puccini (Turandot)</li>
+                <li><strong>O Sole Mio</strong> - Di Capua</li>
+                <li><strong>Ave Maria</strong> - Schubert</li>
+                <li><strong>Le Temps des Cerises</strong> - Traditionnel</li>
+                <li><strong>Habanera (Carmen)</strong> - Bizet</li>
+                <li><strong>Méditation (Thaïs)</strong> - Massenet</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Harmonica Mélodie | Bruno Dember. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="https://youtube.com/@harmonicavibes" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
