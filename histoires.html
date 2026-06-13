@@ -2,9 +2,10 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <base href="/harmonica-melodie/"> <!-- ✅ Base URL -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Histoires - Harmonica Mélodie | Bruno Dember</title>
-    <meta name="description" content="Découvrez les histoires et anecdotes derrière les morceaux d'harmonica de Bruno Dember : chanson française, jazz, bossa nova et plus encore. Harmonica Mélodie.">
+    <title>Histoires | Harmonica Mélodie | Bruno Dember</title>
+    <meta name="description" content="Découvrez les anecdotes et histoires autour de l'harmonica et de ma passion pour la musique.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎶</text></svg>">
 </head>
@@ -13,45 +14,85 @@
         <div class="header-banner">
             <div class="banner-svg">
                 <svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <rect width="1200" height="300" fill="url(#skyGradient)"/>
+                    <rect width="1200" height="300" fill="url(#skyGradient)" />
                     <g fill="#1A1A1A" opacity="0.8">
-                        <path d="M100 300 L100 150 L110 150 L110 120 L120 120 L120 100 L130 100 L130 80 L140 80 L140 60 L150 60 L150 40 L160 40 L160 20 L170 20 L170 10 L180 10 L180 300 Z"/>
-                        <path d="M180 10 L200 30 L200 50 L210 50 L210 70 L220 70 L220 90 L230 90 L230 110 L240 110 L240 130 L250 130 L250 150 L260 150 L260 300 Z"/>
-                        <ellipse cx="350" cy="180" rx="60" ry="40"/>
-                        <rect x="320" y="180" width="60" height="80"/>
-                        <polygon points="320,180 350,140 380,180"/>
-                        <rect x="450" y="200" width="40" height="100"/>
-                        <rect x="500" y="180" width="30" height="120"/>
-                        <rect x="540" y="190" width="35" height="110"/>
-                        <rect x="580" y="170" width="45" height="130"/>
+                        <path d="M100 300 L100 150 L110 150 L110 120 L120 120 L120 100 L130 100 L130 80 L140 80 L140 60 L150 60 L150 40 L160 40 L160 20 L170 20 L170 10 L180 10 L180 300 Z" />
+                        <path d="M180 10 L200 30 L200 50 L210 50 L210 70 L220 70 L220 90 L230 90 L230 110 L240 110 L240 130 L250 130 L250 150 L260 150 L260 300 Z" />
+                        <ellipse cx="350" cy="180" rx="60" ry="40" />
+                        <rect x="320" y="180" width="60" height="80" />
+                        <polygon points="320,180 350,140 380,180" />
                     </g>
                     <g fill="#5C4033" stroke="#3A2E28" stroke-width="2">
-                        <path d="M600 250 L600 180 L750 180 L800 220 L800 250 L600 250 Z"/>
-                        <rect x="620" y="170" width="130" height="10" rx="5"/>
-                        <rect x="650" y="160" width="60" height="20" rx="10" fill="#D4AF37"/>
-                        <rect x="655" y="155" width="50" height="5" rx="2" fill="#1A1A1A"/>
-                        <rect x="660" y="150" width="40" height="5" rx="2" fill="#1A1A1A"/>
-                        <rect x="665" y="145" width="30" height="5" rx="2" fill="#1A1A1A"/>
-                        <rect x="720" y="165" width="40" height="30" rx="2" fill="#F5F5DC" stroke="#5C4033" stroke-width="1"/>
-                        <line x1="725" y1="170" x2="755" y2="170" stroke="#5C4033" stroke-width="0.5"/>
-                        <line x1="725" y1="175" x2="755" y2="175" stroke="#5C4033" stroke-width="0.5"/>
-                        <line x1="725" y1="180" x2="755" y2="180" stroke="#5C4033" stroke-width="0.5"/>
-                        <line x1="725" y1="185" x2="755" y2="185" stroke="#5C4033" stroke-width="0.5"/>
-                        <line x1="725" y1="190" x2="755" y2="190" stroke="#5C4033" stroke-width="0.5"/>
-                    </g>
-                    <g fill="#D4AF37" opacity="0.8">
-                        <circle cx="50" cy="50" r="2"/>
-                        <circle cx="100" cy="80" r="1.5"/>
-                        <circle cx="150" cy="40" r="1"/>
-                        <circle cx="200" cy="90" r="1.5"/>
-                        <circle cx="250" cy="60" r="2"/>
-                        <circle cx="300" cy="100" r="1"/>
-                        <circle cx="400" cy="50" r="1.5"/>
-                        <circle cx="450" cy="80" r="2"/>
-                        <circle cx="500" cy="40" r="1"/>
-                        <circle cx="550" cy="90" r="1.5"/>
+                        <path d="M600 250 L600 180 L750 180 L800 220 L800 250 L600 250 Z" />
+                        <rect x="620" y="170" width="130" height="10" rx="5" />
+                        <rect x="650" y="160" width="60" height="20" rx="10" fill="#D4AF37" />
                     </g>
                     <defs>
                         <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" style="stop-color:#0A1A2A;stop-opacity:1"/>
-                            <stop offset="50%" style="stop-color:#1A2A3A;stop-opacity:1"/>
+                            <stop offset="0%" style="stop-color:#0A1A2A;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#1A2A3A;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#2C3E50;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="header-content">
+                <h1>Harmonica Mélodie</h1>
+                <p class="subtitle">Histoires et anecdotes</p>
+                <p class="artist-name">par Bruno Dember</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="repertoire.html">Répertoire</a></li>
+                <li><a href="videos.html">Vidéos</a></li>
+                <li><a href="histoires.html" class="active">Histoires</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Histoires et anecdotes</h1>
+            <p>Plongez dans l'univers de l'harmonica à travers des récits, des souvenirs et des découvertes musicales.</p>
+        </section>
+
+        <article class="story-card">
+            <h2>Ma rencontre avec l'harmonica</h2>
+            <p class="story-date">15 mars 2024</p>
+            <p>Tout a commencé un jour de pluie à Paris. En me promenant dans le quartier de Montmartre, j'ai entendu une mélodie qui sortait d'un petit café. Intrigué, je me suis approché et j'ai vu un homme jouer de l'harmonica avec une telle passion que j'en ai été immédiatement captivé. Ce jour-là, j'ai décidé d'acheter mon premier harmonica, un Hohner Blues Harp en do majeur.</p>
+            <p>Les premiers mois ont été difficiles. Produire un son clair était déjà un défi, et jouer une mélodie simple semblait impossible. Mais avec de la persévérance et beaucoup d'écoute, j'ai progressivement appris à maîtriser cet instrument fascinant.</p>
+        </article>
+
+        <article class="story-card">
+            <h2>Le jour où j'ai joué pour la première fois en public</h2>
+            <p class="story-date">10 mai 2024</p>
+            <p>C'était lors d'un petit festival de rue dans mon quartier. J'avais préparé une reprise de "La Vie en Rose" pendant des semaines. Mes mains tremblaient, mais dès que j'ai commencé à jouer, tout est devenu naturel. Le public a applaudi, et certains sont même venus me parler après pour me féliciter. Ce moment a marqué le début de ma passion pour partager la musique avec les autres.</p>
+        </article>
+
+        <article class="story-card">
+            <h2>Pourquoi j'aime la chanson française</h2>
+            <p class="story-date">22 juin 2024</p>
+            <p>La chanson française a une richesse mélodique et poétique qui se marie parfaitement avec le son chaleureux de l'harmonica. Des artistes comme Édith Piaf, Jacques Brel ou Charles Aznavour ont écrit des morceaux intemporels qui touchent le cœur. Interpréter leurs chansons à l'harmonica, c'est comme leur donner une nouvelle vie, une nouvelle couleur.</p>
+            <p>Mon rêve serait de créer un spectacle où je mélangerais des reprises de ces grands classiques avec des compositions originales, le tout accompagné à l'harmonica.</p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Harmonica Mélodie | Bruno Dember. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="https://youtube.com/@harmonicavibes" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
