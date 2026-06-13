@@ -1,24 +1,38 @@
-// JavaScript principal pour le site Harmonica Mélodie
-
+// ===== Initialisation =====
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialisation du site
-    initSite();
-});
-
-function initSite() {
-    // Gestion de la navigation active
-    setActiveNavLink();
-
     // Animation au scroll
     initScrollAnimations();
 
-    // Gestion du menu mobile (si besoin à l'avenir)
-    initMobileMenu();
+    // Gestion du menu actif
+    setActiveNavLink();
+
+    // Autres initialisations si nécessaire
+});
+
+// ===== Animations au scroll =====
+function initScrollAnimations() {
+    const animatedElements = document.querySelectorAll('.video-card, .style-card, .story-card, .detail-card');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    animatedElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
 }
 
-/**
- * Met en évidence le lien de navigation actif
- */
+// ===== Gestion du menu actif =====
 function setActiveNavLink() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('nav a');
@@ -33,79 +47,5 @@ function setActiveNavLink() {
     });
 }
 
-/**
- * Initialise les animations au scroll
- */
-function initScrollAnimations() {
-    const animatedElements = document.querySelectorAll('.video-card, .style-card, .repertoire-category, .story-card');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    });
-
-    animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-    });
-}
-
-/**
- * Initialise le menu mobile (pour une future version responsive améliorée)
- */
-function initMobileMenu() {
-    const mobileMenuButton = document.querySelector('.mobile-menu-button');
-    if (mobileMenuButton) {
-        mobileMenuButton.addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('mobile-open');
-        });
-    }
-}
-
-/**
- * Fonction utilitaire pour extraire l'ID YouTube d'une URL
- */
-function getYouTubeVideoId(url) {
-    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
-    const match = url.match(regExp);
-    return (match && match[2].length === 11) ? match[2] : null;
-}
-
-/**
- * Fonction pour ajouter dynamiquement une vidéo
- * Peut être appelée depuis la console ou via un formulaire
- */
-function addVideo(videoId, title, description) {
-    const container = document.getElementById('videos-container') || document.getElementById('featured-videos');
-    if (!container) return;
-
-    const videoCard = document.createElement('article');
-    videoCard.className = 'video-card';
-    videoCard.innerHTML = `
-        <div class="video-embed">
-            <iframe src="https://www.youtube.com/embed/${videoId}"
-                    title="${title}"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-            </iframe>
-        </div>
-        <div class="video-info">
-            <h3>${title}</h3>
-            <p>${description}</p>
-        </div>
-    `;
-    container.appendChild(videoCard);
-}
-
-// Expose les fonctions au scope global
-window.addVideo = addVideo;
-window.addVideoToFeatured = addVideo;
+// ===== Fonctions utilitaires =====
+// Ajoute ici d'autres fonctions JavaScript si nécessaire
