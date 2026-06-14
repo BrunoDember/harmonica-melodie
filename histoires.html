@@ -2,50 +2,46 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <base href="/harmonica-melodie/"> <!-- ✅ Base URL -->
+    <base href="/harmonica-melodie/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histoires | Harmonica Mélodie | Bruno Dember</title>
-    <meta name="description" content="Découvrez les anecdotes et histoires autour de l'harmonica et de ma passion pour la musique.">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Découvrez les histoires et anecdotes de Bruno Dember sur l'harmonica : sa passion, ses rencontres et ses inspirations. Bruno Dember - Harmonica Mélodie.">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Histoires | Harmonica Mélodie | Bruno Dember">
+    <meta property="og:description" content="Lisez les histoires et anecdotes de Bruno Dember sur l'harmonica.">
+    <meta property="og:image" content="https://brunodember.github.io/harmonica-melodie/images/og-image.jpg">
+    <meta property="og:url" content="https://brunodember.github.io/harmonica-melodie/histoires.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Histoires | Harmonica Mélodie | Bruno Dember">
+    <meta name="twitter:description" content="Lisez les histoires et anecdotes de Bruno Dember sur l'harmonica.">
+    <meta name="twitter:image" content="https://brunodember.github.io/harmonica-melodie/images/og-image.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Bruno Dember",
+      "description": "Harmoniciste spécialisé dans tous les styles musicaux : chanson française, jazz, bossa nova, opéra.",
+      "url": "https://brunodember.github.io/harmonica-melodie/",
+      "sameAs": ["https://youtube.com/@harmonicavibes"]
+    }
+    </script>
+
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎶</text></svg>">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QRP1YTEPNK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QRP1YTEPNK');
-</script>
 </head>
 <body>
     <header>
         <div class="header-banner">
-            <div class="banner-svg">
-                <svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <rect width="1200" height="300" fill="url(#skyGradient)" />
-                    <g fill="#1A1A1A" opacity="0.8">
-                        <path d="M100 300 L100 150 L110 150 L110 120 L120 120 L120 100 L130 100 L130 80 L140 80 L140 60 L150 60 L150 40 L160 40 L160 20 L170 20 L170 10 L180 10 L180 300 Z" />
-                        <path d="M180 10 L200 30 L200 50 L210 50 L210 70 L220 70 L220 90 L230 90 L230 110 L240 110 L240 130 L250 130 L250 150 L260 150 L260 300 Z" />
-                        <ellipse cx="350" cy="180" rx="60" ry="40" />
-                        <rect x="320" y="180" width="60" height="80" />
-                        <polygon points="320,180 350,140 380,180" />
-                    </g>
-                    <g fill="#5C4033" stroke="#3A2E28" stroke-width="2">
-                        <path d="M600 250 L600 180 L750 180 L800 220 L800 250 L600 250 Z" />
-                        <rect x="620" y="170" width="130" height="10" rx="5" />
-                        <rect x="650" y="160" width="60" height="20" rx="10" fill="#D4AF37" />
-                    </g>
-                    <defs>
-                        <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" style="stop-color:#0A1A2A;stop-opacity:1" />
-                            <stop offset="50%" style="stop-color:#1A2A3A;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#2C3E50;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
+            <object type="image/svg+xml" data="includes/banner.svg" class="banner-svg"></object>
             <div class="header-content">
                 <h1>Harmonica Mélodie</h1>
-                <p class="subtitle">Histoires et anecdotes</p>
+                <p class="subtitle">L'art de l'harmonica, de la chanson française au jazz</p>
                 <p class="artist-name">par Bruno Dember</p>
             </div>
         </div>
@@ -62,29 +58,30 @@
 
     <main class="container">
         <section class="page-header">
-            <h1>Histoires et anecdotes</h1>
-            <p>Plongez dans l'univers de l'harmonica à travers des récits, des souvenirs et des découvertes musicales.</p>
+            <h1>Mes histoires</h1>
+            <p>Découvrez les anecdotes et récits autour de ma passion pour l'harmonica. Des rencontres, des voyages et des moments inoubliables.</p>
         </section>
 
-        <article class="story-card">
-            <h2>Ma rencontre avec l'harmonica</h2>
-            <p class="story-date">15 mars 2024</p>
-            <p>Tout a commencé un jour de pluie à Paris. En me promenant dans le quartier de Montmartre, j'ai entendu une mélodie qui sortait d'un petit café. Intrigué, je me suis approché et j'ai vu un homme jouer de l'harmonica avec une telle passion que j'en ai été immédiatement captivé. Ce jour-là, j'ai décidé d'acheter mon premier harmonica, un Hohner Blues Harp en do majeur.</p>
-            <p>Les premiers mois ont été difficiles. Produire un son clair était déjà un défi, et jouer une mélodie simple semblait impossible. Mais avec de la persévérance et beaucoup d'écoute, j'ai progressivement appris à maîtriser cet instrument fascinant.</p>
-        </article>
+        <section class="story-card">
+            <h2>Ma première rencontre avec l'harmonica</h2>
+            <p class="story-date">Publié le 10 juin 2024</p>
+            <p>Tout a commencé dans un petit magasin de musique à Paris. J'avais 12 ans et je trainais avec mon père qui cherchait une guitare. C'est là, entre deux rayons de partitions, que j'ai aperçu un petit instrument métallique qui brillait sous les néons. C'était un harmonica Hohner Marine Band. Sans hésiter, je l'ai pris dans mes mains et j'ai soufflé dedans. Le son qui en est sorti m'a immédiatement transporté. Ce jour-là, j'ai su que cet instrument ferait partie de ma vie.</p>
+            <p>Mon père, voyant mon enthousiasme, me l'a offert pour mon anniversaire. Ce fut le début d'une longue histoire d'amour avec la musique.</p>
+        </section>
 
-        <article class="story-card">
+        <section class="story-card">
             <h2>Le jour où j'ai joué pour la première fois en public</h2>
-            <p class="story-date">10 mai 2024</p>
-            <p>C'était lors d'un petit festival de rue dans mon quartier. J'avais préparé une reprise de "La Vie en Rose" pendant des semaines. Mes mains tremblaient, mais dès que j'ai commencé à jouer, tout est devenu naturel. Le public a applaudi, et certains sont même venus me parler après pour me féliciter. Ce moment a marqué le début de ma passion pour partager la musique avec les autres.</p>
-        </article>
+            <p class="story-date">Publié le 15 juin 2024</p>
+            <p>Je me souviens encore de ce soir-là comme si c'était hier. C'était dans un petit café à Montmartre, rempli de monde. J'avais préparé une reprise de "La Vie en Rose" pendant des semaines, mais le trac me submergeait. Mes mains tremblaient, mon cœur battait la chamade. Puis, j'ai fermé les yeux, j'ai inspiré un bon coup, et j'ai commencé à jouer.</p>
+            <p>Les premières notes ont résonné dans le silence. Puis, petit à petit, les conversations se sont tues. Quand j'ai fini, il y a eu un moment de silence, puis des applaudissements nourris. Ce soir-là, j'ai compris que la musique avait le pouvoir de rassembler les gens et de créer des émotions fortes.</p>
+        </section>
 
-        <article class="story-card">
-            <h2>Pourquoi j'aime la chanson française</h2>
-            <p class="story-date">22 juin 2024</p>
-            <p>La chanson française a une richesse mélodique et poétique qui se marie parfaitement avec le son chaleureux de l'harmonica. Des artistes comme Édith Piaf, Jacques Brel ou Charles Aznavour ont écrit des morceaux intemporels qui touchent le cœur. Interpréter leurs chansons à l'harmonica, c'est comme leur donner une nouvelle vie, une nouvelle couleur.</p>
-            <p>Mon rêve serait de créer un spectacle où je mélangerais des reprises de ces grands classiques avec des compositions originales, le tout accompagné à l'harmonica.</p>
-        </article>
+        <section class="story-card">
+            <h2>Mon voyage à La Nouvelle-Orléans</h2>
+            <p class="story-date">Publié le 20 juin 2024</p>
+            <p>La Nouvelle-Orléans, c'est le berceau du jazz et du blues. J'y suis allé il y a deux ans pour un festival d'harmonica. Ce voyage a été une révélation. J'y ai rencontré des musiciens incroyables, des légendes vivantes qui m'ont appris tant de choses en quelques jours.</p>
+            <p>Un soir, dans un petit club de Frenchmen Street, j'ai eu la chance de jouer avec un groupe de jazz local. Ce fut une expérience inoubliable. L'énergie de la ville, la passion des musiciens, tout cela m'a inspiré pour explorer de nouveaux styles et pour repousser mes limites.</p>
+        </section>
     </main>
 
     <footer>
@@ -100,6 +97,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="JS/main.js" defer></script>
 </body>
 </html>
