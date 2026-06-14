@@ -2,50 +2,59 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <base href="/harmonica-melodie/"> <!-- ✅ Base URL -->
+    <base href="/harmonica-melodie/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vidéos | Harmonica Mélodie | Bruno Dember</title>
-    <meta name="description" content="Retrouvez toutes mes vidéos d'harmonica : chansons françaises, jazz, bossa nova, opéra et plus encore.">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Retrouvez toutes les vidéos de Bruno Dember à l'harmonica : interprétations, tutoriels et performances. Bruno Dember - Harmonica Mélodie.">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Vidéos | Harmonica Mélodie | Bruno Dember">
+    <meta property="og:description" content="Retrouvez toutes les vidéos de Bruno Dember à l'harmonica.">
+    <meta property="og:image" content="https://brunodember.github.io/harmonica-melodie/images/og-image.jpg">
+    <meta property="og:url" content="https://brunodember.github.io/harmonica-melodie/videos.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vidéos | Harmonica Mélodie | Bruno Dember">
+    <meta name="twitter:description" content="Retrouvez toutes les vidéos de Bruno Dember à l'harmonica.">
+    <meta name="twitter:image" content="https://brunodember.github.io/harmonica-melodie/images/og-image.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Bruno Dember",
+      "description": "Harmoniciste spécialisé dans tous les styles musicaux : chanson française, jazz, bossa nova, opéra.",
+      "url": "https://brunodember.github.io/harmonica-melodie/",
+      "sameAs": ["https://youtube.com/@harmonicavibes"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Harmonica Mélodie - Première vidéo",
+      "description": "Ma première vidéo sur ma chaîne Harmonica Mélodie.",
+      "thumbnailUrl": "https://img.youtube.com/vi/9Lbs3R3pahw/maxresdefault.jpg",
+      "uploadDate": "2024-01-01",
+      "duration": "PT3M30S",
+      "contentUrl": "https://www.youtube.com/watch?v=9Lbs3R3pahw",
+      "embedUrl": "https://www.youtube.com/embed/9Lbs3R3pahw"
+    }
+    </script>
+
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎶</text></svg>">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QRP1YTEPNK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QRP1YTEPNK');
-</script>
 </head>
 <body>
     <header>
         <div class="header-banner">
-            <div class="banner-svg">
-                <svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <rect width="1200" height="300" fill="url(#skyGradient)" />
-                    <g fill="#1A1A1A" opacity="0.8">
-                        <path d="M100 300 L100 150 L110 150 L110 120 L120 120 L120 100 L130 100 L130 80 L140 80 L140 60 L150 60 L150 40 L160 40 L160 20 L170 20 L170 10 L180 10 L180 300 Z" />
-                        <path d="M180 10 L200 30 L200 50 L210 50 L210 70 L220 70 L220 90 L230 90 L230 110 L240 110 L240 130 L250 130 L250 150 L260 150 L260 300 Z" />
-                        <ellipse cx="350" cy="180" rx="60" ry="40" />
-                        <rect x="320" y="180" width="60" height="80" />
-                        <polygon points="320,180 350,140 380,180" />
-                    </g>
-                    <g fill="#5C4033" stroke="#3A2E28" stroke-width="2">
-                        <path d="M600 250 L600 180 L750 180 L800 220 L800 250 L600 250 Z" />
-                        <rect x="620" y="170" width="130" height="10" rx="5" />
-                        <rect x="650" y="160" width="60" height="20" rx="10" fill="#D4AF37" />
-                    </g>
-                    <defs>
-                        <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" style="stop-color:#0A1A2A;stop-opacity:1" />
-                            <stop offset="50%" style="stop-color:#1A2A3A;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#2C3E50;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
+            <object type="image/svg+xml" data="includes/banner.svg" class="banner-svg"></object>
             <div class="header-content">
                 <h1>Harmonica Mélodie</h1>
-                <p class="subtitle">Mes vidéos</p>
+                <p class="subtitle">L'art de l'harmonica, de la chanson française au jazz</p>
                 <p class="artist-name">par Bruno Dember</p>
             </div>
         </div>
@@ -62,56 +71,61 @@
 
     <main class="container">
         <section class="page-header">
-            <h1>Toutes mes vidéos</h1>
-            <p>Retrouvez ici toutes mes interprétations à l'harmonica, tous styles confondus.</p>
+            <h1>Mes vidéos</h1>
+            <p>Retrouvez ici toutes mes performances et interprétations à l'harmonica. N'hésitez pas à liker, commenter et partager !</p>
         </section>
 
-        <div class="video-grid">
-            <article class="video-card">
-                <div class="video-embed">
-                    <iframe src="https://www.youtube.com/embed/9Lbs3R3pahw"
-                            title="Harmonica Mélodie - Première vidéo"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="video-info">
-                    <h3>Première vidéo</h3>
-                    <p>Ma première vidéo sur ma chaîne Harmonica Mélodie.</p>
-                    <p class="video-date">Publiée le 15 juin 2024</p>
-                </div>
-            </article>
+        <section class="videos-page">
+            <div class="video-grid">
+                <article class="video-card">
+                    <div class="video-embed">
+                        <iframe src="https://www.youtube.com/embed/9Lbs3R3pahw"
+                                title="Harmonica Mélodie - Première vidéo"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Première vidéo</h3>
+                        <p>Ma première vidéo sur ma chaîne Harmonica Mélodie.</p>
+                        <p class="video-date">Publiée le 15 juin 2024</p>
+                    </div>
+                </article>
 
-            <article class="video-card">
-                <div class="video-embed">
-                    <iframe src="https://www.youtube.com/embed/R0z_JLqBijk"
-                            title="Harmonica Mélodie - Deuxième interprétation"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="video-info">
-                    <h3>Deuxième interprétation</h3>
-                    <p>Une nouvelle performance à l'harmonica.</p>
-                    <p class="video-date">Publiée le 20 juin 2024</p>
-                </div>
-            </article>
+                <article class="video-card">
+                    <div class="video-embed">
+                        <iframe src="https://www.youtube.com/embed/R0z_JLqBijk"
+                                title="Harmonica Mélodie - Deuxième interprétation"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Deuxième interprétation</h3>
+                        <p>Une nouvelle performance à l'harmonica.</p>
+                        <p class="video-date">Publiée le 20 juin 2024</p>
+                    </div>
+                </article>
 
-            <article class="video-card">
-                <div class="video-embed">
-                    <iframe src="https://www.youtube.com/embed/bm5PrwpDp4g"
-                            title="Harmonica Mélodie - Troisième performance"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="video-info">
-                    <h3>Troisième performance</h3>
-                    <p>Encore une belle interprétation à découvrir.</p>
-                    <p class="video-date">Publiée le 25 juin 2024</p>
-                </div>
-            </article>
-        </div>
+                <article class="video-card">
+                    <div class="video-embed">
+                        <iframe src="https://www.youtube.com/embed/bm5PrwpDp4g"
+                                title="Harmonica Mélodie - Troisième performance"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Troisième performance</h3>
+                        <p>Encore une belle interprétation à découvrir.</p>
+                        <p class="video-date">Publiée le 25 juin 2024</p>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -127,6 +141,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="JS/main.js" defer></script>
 </body>
 </html>
