@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Page d'accueil -->
+    <url>
+        <loc>https://brunodember.github.io/harmonica-melodie/</loc>
+        <lastmod>2024-06-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Répertoire -->
+    <url>
+        <loc>https://brunodember.github.io/harmonica-melodie/repertoire.html</loc>
+        <lastmod>2024-06-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Vidéos -->
+    <url>
+        <loc>https://brunodember.github.io/harmonica-melodie/videos.html</loc>
+        <lastmod>2024-06-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Histoires -->
+    <url>
+        <loc>https://brunodember.github.io/harmonica-melodie/histoires.html</loc>
+        <lastmod>2024-06-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- À propos -->
+    <url>
+        <loc>https://brunodember.github.io/harmonica-melodie/apropos.html</loc>
+        <lastmod>2024-06-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
