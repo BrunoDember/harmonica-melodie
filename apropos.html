@@ -1,51 +1,47 @@
 <!DOCTYPE html>
-<html lang="fr"> 
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <base href="/harmonica-melodie/"> <!-- ✅ Base URL -->
+    <base href="/harmonica-melodie/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos | Harmonica Mélodie | Bruno Dember</title>
-    <meta name="description" content="Découvrez qui je suis, mon parcours avec l'harmonica et ma passion pour la musique.">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="En savoir plus sur Bruno Dember, harmoniciste passionné. Découvrez son parcours, sa philosophie et ses projets. Bruno Dember - Harmonica Mélodie.">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="À propos | Harmonica Mélodie | Bruno Dember">
+    <meta property="og:description" content="En savoir plus sur Bruno Dember, harmoniciste passionné.">
+    <meta property="og:image" content="https://brunodember.github.io/harmonica-melodie/images/og-image.jpg">
+    <meta property="og:url" content="https://brunodember.github.io/harmonica-melodie/apropos.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="À propos | Harmonica Mélodie | Bruno Dember">
+    <meta name="twitter:description" content="En savoir plus sur Bruno Dember, harmoniciste passionné.">
+    <meta name="twitter:image" content="https://brunodember.github.io/harmonica-melodie/images/og-image.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Bruno Dember",
+      "description": "Harmoniciste spécialisé dans tous les styles musicaux : chanson française, jazz, bossa nova, opéra.",
+      "url": "https://brunodember.github.io/harmonica-melodie/",
+      "sameAs": ["https://youtube.com/@harmonicavibes"]
+    }
+    </script>
+
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎶</text></svg>">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QRP1YTEPNK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QRP1YTEPNK');
-</script>   
 </head>
 <body>
     <header>
         <div class="header-banner">
-            <div class="banner-svg">
-                <svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <rect width="1200" height="300" fill="url(#skyGradient)" />
-                    <g fill="#1A1A1A" opacity="0.8">
-                        <path d="M100 300 L100 150 L110 150 L110 120 L120 120 L120 100 L130 100 L130 80 L140 80 L140 60 L150 60 L150 40 L160 40 L160 20 L170 20 L170 10 L180 10 L180 300 Z" />
-                        <path d="M180 10 L200 30 L200 50 L210 50 L210 70 L220 70 L220 90 L230 90 L230 110 L240 110 L240 130 L250 130 L250 150 L260 150 L260 300 Z" />
-                        <ellipse cx="350" cy="180" rx="60" ry="40" />
-                        <rect x="320" y="180" width="60" height="80" />
-                        <polygon points="320,180 350,140 380,180" />
-                    </g>
-                    <g fill="#5C4033" stroke="#3A2E28" stroke-width="2">
-                        <path d="M600 250 L600 180 L750 180 L800 220 L800 250 L600 250 Z" />
-                        <rect x="620" y="170" width="130" height="10" rx="5" />
-                        <rect x="650" y="160" width="60" height="20" rx="10" fill="#D4AF37" />
-                    </g>
-                    <defs>
-                        <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" style="stop-color:#0A1A2A;stop-opacity:1" />
-                            <stop offset="50%" style="stop-color:#1A2A3A;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#2C3E50;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
+            <object type="image/svg+xml" data="includes/banner.svg" class="banner-svg"></object>
             <div class="header-content">
                 <h1>Harmonica Mélodie</h1>
-                <p class="subtitle">À propos de moi</p>
+                <p class="subtitle">L'art de l'harmonica, de la chanson française au jazz</p>
                 <p class="artist-name">par Bruno Dember</p>
             </div>
         </div>
@@ -63,56 +59,52 @@
     <main class="container">
         <section class="page-header">
             <h1>À propos de moi</h1>
-            <p>Passionné d'harmonica, je partage ma musique et mon amour pour cet instrument polyvalent.</p>
+            <p>Passionné d'harmonica depuis de nombreuses années, je partage ici ma musique et mon amour pour cet instrument unique.</p>
         </section>
 
-        <div class="about-content">
+        <section class="about-content">
             <div class="about-text">
                 <h2>Mon parcours</h2>
-                <p>Je m'appelle <strong>Bruno Dember</strong> et je suis un passionné d'harmonica depuis plusieurs années. Mon voyage musical a commencé avec la chanson française, mais j'ai rapidement découvert que l'harmonica pouvait s'adapter à tous les styles : jazz, bossa nova, opéra, et même des créations originales.</p>
+                <p>J'ai découvert l'harmonica à l'adolescence et depuis, cet instrument ne m'a plus quitté. J'ai exploré de nombreux styles musicaux, de la chanson française au jazz, en passant par la bossa nova et même l'opéra. Chaque style m'a appris quelque chose de nouveau et m'a permis de progresser.</p>
 
-                <p>Ce qui me fascine avec l'harmonica, c'est sa simplicité apparente qui cache une grande complexité. Un petit instrument qui tient dans la poche, mais qui peut exprimer une gamme incroyable d'émotions.</p>
+                <p>Au fil des années, j'ai eu la chance de jouer dans divers contextes : petits cafés, mariages, festivals. Chaque expérience a été une occasion d'apprendre et de partager ma passion avec le public.</p>
 
                 <h2>Ma philosophie</h2>
-                <p>Je crois que la musique est un langage universel qui peut toucher les cœurs et rassembler les gens. Mon objectif est de partager cette passion à travers mes interprétations, mes vidéos et mes histoires.</p>
+                <p>Pour moi, l'harmonica est bien plus qu'un instrument. C'est un moyen d'expression, un langage universel qui permet de toucher les cœurs. Je crois que la musique doit être accessible à tous, et c'est pourquoi je partage mes interprétations et mes connaissances.</p>
 
-                <p>Que ce soit en reprenant des grands classiques ou en explorant de nouveaux styles, je cherche toujours à apporter ma touche personnelle à chaque morceau.</p>
+                <p>Mon objectif est de montrer la diversité de l'harmonica et de prouver qu'il peut s'adapter à tous les styles musicaux. Que ce soit pour une ballade douce ou un morceau énergique, l'harmonica a toujours sa place.</p>
 
-                <h2>Mes influences</h2>
-                <p>Mes principales influences sont les grands maîtres de l'harmonica comme <strong>Toots Thielemans</strong>, <strong>Stevie Wonder</strong>, et <strong>Larry Adler</strong>. Mais je puise aussi mon inspiration dans la chanson française, le jazz, et la musique classique.</p>
-
-                <p>Chaque style musical m'apporte quelque chose de différent, et c'est cette diversité qui rend l'harmonica si passionnant.</p>
+                <h2>Mes projets</h2>
+                <p>Actuellement, je travaille sur plusieurs projets :</p>
+                <ul>
+                    <li>L'enregistrement d'un album de reprises de chansons françaises.</li>
+                    <li>La création de tutoriels pour aider les débutants à maîtriser l'harmonica.</li>
+                    <li>L'organisation de concerts et d'ateliers pour partager ma passion.</li>
+                </ul>
             </div>
 
             <div class="about-details">
                 <div class="detail-card">
-                    <h3>🎵 Mon instrument</h3>
-                    <p>Je joue principalement sur des harmonicas diatoniques Hohner, mais j'expérimente aussi avec des chromatiques pour élargir mes possibilités musicales.</p>
+                    <h3>🎵 Mes influences</h3>
+                    <p>Édith Piaf, Jacques Brel, Toots Thielemans, Stevie Wonder, Antonio Carlos Jobim</p>
                 </div>
 
                 <div class="detail-card">
-                    <h3>📅 Mes débuts</h3>
-                    <p>J'ai commencé l'harmonica il y a 5 ans, et depuis, je n'ai jamais arrêté de progresser et d'apprendre.</p>
+                    <h3>🎶 Mon instrument</h3>
+                    <p>Hohner Marine Band, Hohner Chromatica, Seydel 1847</p>
                 </div>
 
                 <div class="detail-card">
-                    <h3>🎯 Mon objectif</h3>
-                    <p>Partager ma passion avec le plus grand nombre et montrer la diversité de l'harmonica à travers différents styles musicaux.</p>
+                    <h3>📍 Où me trouver</h3>
+                    <p>Paris, France</p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <section class="contact-section">
-            <h2>Restez en contact</h2>
-            <p>Vous pouvez me suivre sur ma chaîne YouTube pour découvrir mes dernières vidéos et interprétations.</p>
-            <div class="social-links">
-                <a href="https://youtube.com/@harmonicavibes" class="btn btn-social" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                    </svg>
-                    Ma chaîne YouTube
-                </a>
-            </div>
+            <h2>Contact</h2>
+            <p>N'hésitez pas à me contacter pour toute question ou demande de collaboration.</p>
+            <p>Vous pouvez me rejoindre sur <a href="https://youtube.com/@harmonicavibes" target="_blank">ma chaîne YouTube</a>.</p>
         </section>
     </main>
 
@@ -129,6 +121,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="JS/main.js" defer></script>
 </body>
 </html>
