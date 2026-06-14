@@ -609,7 +609,7 @@ footer p {
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 9999;
     transition: opacity 0.3s, visibility 0.3s;
     font-weight: bold;
     box-shadow: var(--shadow);
