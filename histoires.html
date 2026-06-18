@@ -35,26 +35,27 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎶</text></svg>">
 </head>
+
 <body>
     <header>
-    <div class="header-banner">
-    <div class="banner-image">
-        <img src="images/harmoParis.png"
-             alt="Harmonica Mélodie - Bruno Dember, harmoniciste à Paris"
-             width="1200" height="300">
-    </div>
-    <div class="header-content">
-        <h1>Harmonica Mélodie</h1>
-        <p class="subtitle">L'art de l'harmonica, de la chanson française au jazz</p>
-        <p class="artist-name">par Bruno Dember</p>
-        </div>
+        <div class="header-banner">
+            <div class="banner-image">
+                <img src="images/harmoParis.png"
+                     alt="Harmonica Mélodie - Bruno Dember, harmoniciste à Paris"
+                     width="1200" height="300">
+            </div>
+            <div class="header-content">
+                <h1>Harmonica Mélodie</h1>
+                <p class="subtitle">L'art de l'harmonica, de la chanson française au jazz</p>
+                <p class="artist-name">par Bruno Dember</p>
+            </div>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="repertoire.html" class="active">Répertoire</a></li>
+                <li><a href="repertoire.html">Répertoire</a></li>
                 <li><a href="videos.html">Vidéos</a></li>
-                <li><a href="histoires.html">Histoires</a></li>
+                <li><a href="histoires.html" class="active">Histoires</a></li>
                 <li><a href="apropos.html">À propos</a></li>
             </ul>
         </nav>
@@ -66,26 +67,26 @@
             <p>Découvrez les anecdotes et récits autour de ma passion pour l'harmonica. Des rencontres, des voyages et des moments inoubliables.</p>
         </section>
 
-        <section class="story-card">
+        <article class="story-card">
             <h2>Ma première rencontre avec l'harmonica</h2>
-            <p class="story-date">Publié le 10 juin 2024</p>
+            <p class="story-date"><time datetime="2024-06-10">Publié le 10 juin 2024</time></p>
             <p>Tout a commencé dans un petit magasin de musique à Paris. J'avais 12 ans et je trainais avec mon père qui cherchait une guitare. C'est là, entre deux rayons de partitions, que j'ai aperçu un petit instrument métallique qui brillait sous les néons. C'était un harmonica Hohner Marine Band. Sans hésiter, je l'ai pris dans mes mains et j'ai soufflé dedans. Le son qui en est sorti m'a immédiatement transporté. Ce jour-là, j'ai su que cet instrument ferait partie de ma vie.</p>
             <p>Mon père, voyant mon enthousiasme, me l'a offert pour mon anniversaire. Ce fut le début d'une longue histoire d'amour avec la musique.</p>
-        </section>
+        </article>
 
-        <section class="story-card">
+        <article class="story-card">
             <h2>Le jour où j'ai joué pour la première fois en public</h2>
-            <p class="story-date">Publié le 15 juin 2024</p>
+            <p class="story-date"><time datetime="2024-06-15">Publié le 15 juin 2024</time></p>
             <p>Je me souviens encore de ce soir-là comme si c'était hier. C'était dans un petit café à Montmartre, rempli de monde. J'avais préparé une reprise de "La Vie en Rose" pendant des semaines, mais le trac me submergeait. Mes mains tremblaient, mon cœur battait la chamade. Puis, j'ai fermé les yeux, j'ai inspiré un bon coup, et j'ai commencé à jouer.</p>
             <p>Les premières notes ont résonné dans le silence. Puis, petit à petit, les conversations se sont tues. Quand j'ai fini, il y a eu un moment de silence, puis des applaudissements nourris. Ce soir-là, j'ai compris que la musique avait le pouvoir de rassembler les gens et de créer des émotions fortes.</p>
-        </section>
+        </article>
 
-        <section class="story-card">
+        <article class="story-card">
             <h2>Mon voyage à La Nouvelle-Orléans</h2>
-            <p class="story-date">Publié le 20 juin 2024</p>
+            <p class="story-date"><time datetime="2024-06-20">Publié le 20 juin 2024</time></p>
             <p>La Nouvelle-Orléans, c'est le berceau du jazz et du blues. J'y suis allé il y a deux ans pour un festival d'harmonica. Ce voyage a été une révélation. J'y ai rencontré des musiciens incroyables, des légendes vivantes qui m'ont appris tant de choses en quelques jours.</p>
             <p>Un soir, dans un petit club de Frenchmen Street, j'ai eu la chance de jouer avec un groupe de jazz local. Ce fut une expérience inoubliable. L'énergie de la ville, la passion des musiciens, tout cela m'a inspiré pour explorer de nouveaux styles et pour repousser mes limites.</p>
-        </section>
+        </article>
     </main>
 
     <footer>
@@ -102,6 +103,8 @@
     </footer>
 
     <script src="JS/main.js" defer></script>
-    <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">↑ Top</button>
+    <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">
+        <span class="visually-hidden">Retour en haut</span>↑
+    </button>
 </body>
 </html>
