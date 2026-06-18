@@ -35,19 +35,20 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎶</text></svg>">
 </head>
+
 <body>
     <header>
-    <div class="header-banner">
-    <div class="banner-image">
-        <img src="images/harmoParis.png"
-             alt="Harmonica Mélodie - Bruno Dember, harmoniciste à Paris"
-             width="1200" height="300">
-    </div>
-    <div class="header-content">
-        <h1>Harmonica Mélodie</h1>
-        <p class="subtitle">L'art de l'harmonica, de la chanson française au jazz</p>
-        <p class="artist-name">par Bruno Dember</p>
-        </div>
+        <div class="header-banner">
+            <div class="banner-image">
+                <img src="images/harmoParis.png"
+                     alt="Harmonica Mélodie - Bruno Dember, harmoniciste à Paris"
+                     width="1200" height="300">
+            </div>
+            <div class="header-content">
+                <h1>Harmonica Mélodie</h1>
+                <p class="subtitle">L'art de l'harmonica, de la chanson française au jazz</p>
+                <p class="artist-name">par Bruno Dember</p>
+            </div>
         </div>
         <nav>
             <ul>
@@ -66,136 +67,72 @@
             <p>Découvrez une sélection de chansons adaptées à l'harmonica, classées par style musical. Ce répertoire évolue régulièrement avec de nouvelles découvertes.</p>
         </section>
 
-        <section class="repertoire-section">
-            <div class="repertoire-grid">
-                <!-- Chansons Françaises -->
-                <div class="repertoire-category">
-                    <div class="category-header">
-                        <span class="category-icon">🎶</span>
-                        <h3>Chansons Françaises</h3>
-                    </div>
-                    <div class="songs-list">
-                        <div class="song-item">
-                            <span class="song-title">La Vie en Rose</span>
-                            <span class="song-artist">Édith Piaf</span>
-                            <span class="song-difficulty">★★☆</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">Ne me quitte pas</span>
-                            <span class="song-artist">Jacques Brel</span>
-                            <span class="song-difficulty">★★★</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">Les Feuilles Mortes</span>
-                            <span class="song-artist">Yves Montand</span>
-                            <span class="song-difficulty">★★☆</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">Sous le ciel de Paris</span>
-                            <span class="song-artist">Yves Montand</span>
-                            <span class="song-difficulty">★☆☆</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">La Bohème</span>
-                            <span class="song-artist">Charles Aznavour</span>
-                            <span class="song-difficulty">★★☆</span>
-                        </div>
-                    </div>
+        <!-- Chansons Françaises -->
+        <section class="styles-section">
+            <h2>Chansons Françaises</h2>
+            <div class="styles-grid">
+                <div class="style-card">
+                    <div class="style-icon">🎶</div>
+                    <h3>Classiques intemporels</h3>
+                    <ul class="song-list">
+                        <li><strong>La Vie en Rose</strong> - Édith Piaf <span class="video-date">★★☆</span></li>
+                        <li><strong>Ne me quitte pas</strong> - Jacques Brel <span class="video-date">★★★</span></li>
+                        <li><strong>Les Feuilles Mortes</strong> - Yves Montand <span class="video-date">★★☆</span></li>
+                        <li><strong>Sous le ciel de Paris</strong> - Yves Montand <span class="video-date">★☆☆</span></li>
+                        <li><strong>La Bohème</strong> - Charles Aznavour <span class="video-date">★★☆</span></li>
+                    </ul>
                 </div>
+            </div>
+        </section>
 
-                <!-- Jazz & Blues -->
-                <div class="repertoire-category">
-                    <div class="category-header">
-                        <span class="category-icon">🎷</span>
-                        <h3>Jazz & Blues</h3>
-                    </div>
-                    <div class="songs-list">
-                        <div class="song-item">
-                            <span class="song-title">Summertime</span>
-                            <span class="song-artist">George Gershwin</span>
-                            <span class="song-difficulty">★★☆</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">The Girl from Ipanema</span>
-                            <span class="song-artist">Antônio Carlos Jobim</span>
-                            <span class="song-difficulty">★★★</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">Autumn Leaves</span>
-                            <span class="song-artist">Joseph Kosma</span>
-                            <span class="song-difficulty">★★★</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">Blue Bossa</span>
-                            <span class="song-artist">Kenny Dorham</span>
-                            <span class="song-difficulty">★★☆</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">Take the A Train</span>
-                            <span class="song-artist">Duke Ellington</span>
-                            <span class="song-difficulty">★★★</span>
-                        </div>
-                    </div>
+        <!-- Jazz & Blues -->
+        <section class="styles-section">
+            <h2>Jazz & Blues</h2>
+            <div class="styles-grid">
+                <div class="style-card">
+                    <div class="style-icon">🎷</div>
+                    <h3>Standards de jazz</h3>
+                    <ul class="song-list">
+                        <li><strong>Summertime</strong> - George Gershwin <span class="video-date">★★☆</span></li>
+                        <li><strong>The Girl from Ipanema</strong> - Antônio Carlos Jobim <span class="video-date">★★★</span></li>
+                        <li><strong>Autumn Leaves</strong> - Joseph Kosma <span class="video-date">★★★</span></li>
+                        <li><strong>Blue Bossa</strong> - Kenny Dorham <span class="video-date">★★☆</span></li>
+                        <li><strong>Take the A Train</strong> - Duke Ellington <span class="video-date">★★★</span></li>
+                    </ul>
                 </div>
+            </div>
+        </section>
 
-                <!-- Bossa Nova -->
-                <div class="repertoire-category">
-                    <div class="category-header">
-                        <span class="category-icon">🌴</span>
-                        <h3>Bossa Nova</h3>
-                    </div>
-                    <div class="songs-list">
-                        <div class="song-item">
-                            <span class="song-title">Garota de Ipanema</span>
-                            <span class="song-artist">Antônio Carlos Jobim</span>
-                            <span class="song-difficulty">★★☆</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">Desafinado</span>
-                            <span class="song-artist">Antônio Carlos Jobim</span>
-                            <span class="song-difficulty">★★★</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">Corcovado</span>
-                            <span class="song-artist">Antônio Carlos Jobim</span>
-                            <span class="song-difficulty">★★☆</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">Wave</span>
-                            <span class="song-artist">Antônio Carlos Jobim</span>
-                            <span class="song-difficulty">★★★</span>
-                        </div>
-                    </div>
+        <!-- Bossa Nova -->
+        <section class="styles-section">
+            <h2>Bossa Nova</h2>
+            <div class="styles-grid">
+                <div class="style-card">
+                    <div class="style-icon">🌴</div>
+                    <h3>Rythmes brésiliens</h3>
+                    <ul class="song-list">
+                        <li><strong>Garota de Ipanema</strong> - Antônio Carlos Jobim <span class="video-date">★★☆</span></li>
+                        <li><strong>Corcovado</strong> - Antônio Carlos Jobim <span class="video-date">★★★</span></li>
+                        <li><strong>Desafinado</strong> - Antônio Carlos Jobim <span class="video-date">★★☆</span></li>
+                        <li><strong>Wave</strong> - Antônio Carlos Jobim <span class="video-date">★★★</span></li>
+                    </ul>
                 </div>
+            </div>
+        </section>
 
-                <!-- Opéra & Classique -->
-                <div class="repertoire-category">
-                    <div class="category-header">
-                        <span class="category-icon">🎭</span>
-                        <h3>Opéra & Classique</h3>
-                    </div>
-                    <div class="songs-list">
-                        <div class="song-item">
-                            <span class="song-title">Nessun Dorma</span>
-                            <span class="song-artist">Giacomo Puccini</span>
-                            <span class="song-difficulty">★★★★</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">Ave Maria</span>
-                            <span class="song-artist">Franz Schubert</span>
-                            <span class="song-difficulty">★★★</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">Ode à la Joie</span>
-                            <span class="song-artist">Ludwig van Beethoven</span>
-                            <span class="song-difficulty">★★☆</span>
-                        </div>
-                        <div class="song-item">
-                            <span class="song-title">Clair de Lune</span>
-                            <span class="song-artist">Claude Debussy</span>
-                            <span class="song-difficulty">★★★★</span>
-                        </div>
-                    </div>
+        <!-- Opéra & Classique -->
+        <section class="styles-section">
+            <h2>Opéra & Classique</h2>
+            <div class="styles-grid">
+                <div class="style-card">
+                    <div class="style-icon">🎭</div>
+                    <h3>Airs d'opéra</h3>
+                    <ul class="song-list">
+                        <li><strong>Nessun Dorma</strong> - Giacomo Puccini <span class="video-date">★★★</span></li>
+                        <li><strong>Habanera (Carmen)</strong> - Georges Bizet <span class="video-date">★★★</span></li>
+                        <li><strong>Ave Maria</strong> - Franz Schubert <span class="video-date">★★☆</span></li>
+                        <li><strong>Ode à la Joie</strong> - Ludwig van Beethoven <span class="video-date">★☆☆</span></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -215,6 +152,8 @@
     </footer>
 
     <script src="JS/main.js" defer></script>
-    <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">↑ Top</button>
+    <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">
+        <span class="visually-hidden">Retour en haut</span>↑
+    </button>
 </body>
 </html>
