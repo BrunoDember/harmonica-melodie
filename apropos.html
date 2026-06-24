@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos de Bruno Dember | Harmoniciste à Paris - Biographie et Projets</title>
     <meta name="description" content="Découvrez Bruno Dember, harmoniciste passionné à Paris. Biographie, parcours musical, projets et collaborations. Spécialiste de la chanson française et du jazz.">    
+    <meta name="keywords" content="harmonica, Bruno Dember, chanson française, jazz, bossa nova, opéra, cours harmonica, Paris">
+    <meta name="author" content="Bruno Dember">
+    <link rel="canonical" href="https://brunodember.github.io/harmonica-melodie/apropos.html">
 
     <!-- OpenGraph -->
     <meta property="og:title" content="À propos | Harmonica Mélodie | Bruno Dember">
@@ -13,6 +16,8 @@
     <meta property="og:image" content="https://brunodember.github.io/harmonica-melodie/images/og-image.jpg">
     <meta property="og:url" content="https://brunodember.github.io/harmonica-melodie/apropos.html">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Harmonica Mélodie">
+    <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -32,7 +37,11 @@
     }
     </script>
 
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.min.css">
+    <link rel="preload" href="CSS/style.min.css" as="style">
+    <link rel="preload" href="JS/main.min.js" as="script">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.youtube.com">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎶</text></svg>">
 </head>
 <body>
@@ -57,11 +66,13 @@
                 <li><a href="histoires.html">Histoires</a></li>
                 <li><a href="apropos.html">À propos</a></li>
             </ul>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Basculer en mode sombre">🌓</button>
         </nav>
     </header>
 
     <nav>
         <!-- ... -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Basculer en mode sombre">🌓</button>
     </nav>
     </header>
 
@@ -130,7 +141,7 @@
         </div>
     </footer>
 
-<script src="JS/main.js" defer></script>
+<script src="JS/main.min.js" defer></script>
 <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">↑ Top</button>
 </body>
 </html>

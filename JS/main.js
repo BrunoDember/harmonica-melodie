@@ -1,4 +1,34 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Animation au scroll
+    initScrollAnimations();
+
+    // Gestion du menu actif
+    setActiveNavLink();
+
+    // ===== Bouton "Back to Top" =====
+    initBackToTopButton();
+
+    // ===== Dark Mode Toggle =====
+    initThemeToggle();
+});
+=======
 // ===== Initialisation =====
+document.addEventListener('DOMContentLoaded', function() {
+    // Animation au scroll
+    initScrollAnimations();
+
+    // Gestion du menu actif
+    setActiveNavLink();
+
+    // ===== Bouton "Back to Top" =====
+    initBackToTopButton();
+
+    // ===== Dark Mode Toggle =====
+    initThemeToggle();
+
+    // ===== Lazy loading des iframes YouTube =====
+    initLazyIframes();
+});=====
 document.addEventListener('DOMContentLoaded', function() {
     // Animation au scroll
     initScrollAnimations();
@@ -92,7 +122,61 @@ function initScrollAnimations() {
     });
 }
 
+function setActiveNavLink() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('nav a');
+
+    navLinks.forEach(link => {
+        // Normalise le chemin du lien (supprime les / et #)
+        const linkPage = link.getAttribute('href').split('/').pop().split('#')[0] || 'index.html';
+        const linkPageClean = linkPage === '' ? 'index.html' : linkPage;
+
+        if (linkPageClean === currentPage) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+}
+=======
 // ===== Gestion du menu actif =====
+function setActiveNavLink() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('nav a');
+
+    navLinks.forEach(link => {
+        // Normalise le chemin du lien (supprime les / et #)
+        const linkPage = link.getAttribute('href').split('/').pop().split('#')[0] || 'index.html';
+        const linkPageClean = linkPage === '' ? 'index.html' : linkPage;
+
+        if (linkPageClean === currentPage) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+}
+
+// ===== Lazy loading des iframes YouTube =====
+function initLazyIframes() {
+    const lazyIframes = document.querySelectorAll('iframe[data-src]');
+    if (lazyIframes.length === 0) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const iframe = entry.target;
+                iframe.src = iframe.dataset.src;
+                observer.unobserve(iframe);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '200px'
+    });
+
+    lazyIframes.forEach(iframe => observer.observe(iframe));
+}=====
 function setActiveNavLink() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('nav a');

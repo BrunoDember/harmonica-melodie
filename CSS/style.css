@@ -656,3 +656,37 @@ footer p {
         font-size: 1.5rem;
     }
 }
+
+/* ===== Bouton Dark Mode ===== */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    background: var(--primary-color);
+    color: var(--light-color);
+}
+
+[data-theme="dark"] .theme-toggle {
+    background: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background: var(--primary-color);
+    color: var(--dark-color);
+}

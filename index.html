@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harmonica Mélodie | Bruno Dember - Harmoniciste à Paris</title>
     <meta name="description" content="Découvrez l'harmonica à travers tous les styles musicaux avec Bruno Dember : chanson française, jazz, bossa nova, opéra. Cours, tutoriels et performances à Paris.">    
+    <meta name="keywords" content="harmonica, Bruno Dember, chanson française, jazz, bossa nova, opéra, cours harmonica, Paris">
+    <meta name="author" content="Bruno Dember">
+    <link rel="canonical" href="https://brunodember.github.io/harmonica-melodie/">
 
     <!-- OpenGraph -->
     <meta property="og:title" content="Harmonica Mélodie | Bruno Dember">
@@ -13,6 +16,8 @@
     <meta property="og:image" content="https://brunodember.github.io/harmonica-melodie/images/og-image.jpg">
     <meta property="og:url" content="https://brunodember.github.io/harmonica-melodie/">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Harmonica Mélodie">
+    <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -45,7 +50,11 @@
     }
     </script>
 
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.min.css">
+    <link rel="preload" href="CSS/style.min.css" as="style">
+    <link rel="preload" href="JS/main.min.js" as="script">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.youtube.com">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎶</text></svg>">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QRP1YTEPNK"></script>
 <script>
@@ -59,7 +68,8 @@
     <header>
     <div class="header-banner">
     <div class="banner-image">
-        <img src="images/harmoParis.png"
+        <img src="images/harmoParis.webp"
+             loading="lazy"
              alt="Harmonica Mélodie - Bruno Dember, harmoniciste à Paris"
              width="1200" height="300">
     </div>
@@ -77,6 +87,7 @@
                 <li><a href="histoires.html">Histoires</a></li>
                 <li><a href="apropos.html">À propos</a></li>
             </ul>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Basculer en mode sombre">🌓</button>
         </nav>
     </header>
 
@@ -97,7 +108,7 @@
             <div class="video-grid" id="featured-videos">
                 <article class="video-card">
                     <div class="video-embed">
-                        <iframe src="https://www.youtube.com/embed/9Lbs3R3pahw"
+                        <iframe src="about:blank" data-src="https://www.youtube.com/embed/9Lbs3R3pahw" loading="lazy"
                                 title="Harmonica Mélodie - Première vidéo"
                                 loading="lazy"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -111,7 +122,7 @@
                 </article>
                 <article class="video-card">
                     <div class="video-embed">
-                        <iframe src="https://www.youtube.com/embed/R0z_JLqBijk"
+                        <iframe src="about:blank" data-src="https://www.youtube.com/embed/R0z_JLqBijk" loading="lazy"
                                 title="Harmonica Mélodie - Deuxième interprétation"
                                 loading="lazy"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -125,7 +136,7 @@
                 </article>
                 <article class="video-card">
                     <div class="video-embed">
-                        <iframe src="https://www.youtube.com/embed/bm5PrwpDp4g"
+                        <iframe src="about:blank" data-src="https://www.youtube.com/embed/bm5PrwpDp4g" loading="lazy"
                                 title="Harmonica Mélodie - Troisième performance"
                                 loading="lazy"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -189,7 +200,7 @@
         </div>
     </footer>
 
-    <script src="JS/main.js" defer></script>
+    <script src="JS/main.min.js" defer></script>
     <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">↑ Top</button>
 </body>
 </html>
