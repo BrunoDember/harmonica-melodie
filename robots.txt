@@ -1,3 +1,29 @@
 User-agent: *
 Allow: /
 Sitemap: https://brunodember.github.io/harmonica-melodie/sitemap.xml
+
+# Autoriser les crawlers d'IA (Google, Bing, Perplexity, You.com, etc.)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Bloquer les pages inutiles (si applicable)
+Disallow: /private/
+Disallow: /admin/

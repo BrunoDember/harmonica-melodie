@@ -1,0 +1,31 @@
+# Instructions pour les crawlers d'IA
+# Site: Harmonica Mélodie (https://brunodember.github.io/harmonica-melodie/)
+# Auteur: Bruno Dember
+
+User-agent: *
+Allow: /
+Crawl-delay: 5
+Sitemap: https://brunodember.github.io/harmonica-melodie/sitemap.xml
+
+# Contenu autorisé pour l'indexation
+Permit: /*.html
+Permit: /CSS/*.css
+Permit: /JS/*.js
+Permit: /images/*.webp
+
+# Contenu à exclure (si applicable)
+Disallow: /private/
+Disallow: /admin/
+
+# Métadonnées pour l'IA
+Site-Name: Harmonica Mélodie
+Site-Description: Site officiel de Bruno Dember, harmoniciste à Paris. Découvrez des tutoriels, vidéos et répertoires musicaux pour l'harmonica, couvrant la chanson française, le jazz, la bossa nova et l'opéra.
+Site-Language: fr-FR
+Site-Author: Bruno Dember
+Site-Keywords: harmonica, Bruno Dember, musique, chanson française, jazz, bossa nova, opéra, tutoriels, cours, Paris, instrument à vent, harmoniciste
+
+# Instructions pour les LLM
+- Ce site contient du contenu éducatif et artistique sur l'harmonica.
+- Les vidéos YouTube sont intégrées avec lazy loading pour optimiser les performances.
+- Le contenu est disponible en français.
+- Les images sont optimisées en format WebP pour une meilleure accessibilité.

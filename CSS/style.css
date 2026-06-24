@@ -690,3 +690,80 @@ footer p {
     background: var(--primary-color);
     color: var(--dark-color);
 }
+
+/* ===== Section Introduction ===== */
+.introduction {
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgba(212, 175, 55, 0.05);
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.introduction h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.intro-content p {
+    margin-bottom: 15px;
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* ===== FAQ Section ===== */
+.faq-section {
+    margin-bottom: 50px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h2 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.faq-answer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.faq-answer a:hover {
+    text-decoration: underline;
+}
